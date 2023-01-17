@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import {View, Text, Touchable, TouchableOpacity,Button,TextInput, Alert, KeyboardAvoidingView,ScrollView} from 'react-native';
-import Background from './Background';
-import Btn from './Btn';
+import Background from '../Background';
+import Btn from '../Btn';
 import { Formik } from 'formik';
 import * as yup from 'yup';
+import axios from "axios"
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
-const Login = (props) => {
- //const [Username, setUsername]= useState("");
+const Login = ({navigation}) => {
+ //const [user, setUser]= useState();
  //const [Password, setPassword]= useState(""); 
  const loginValidationSchema = yup.object().shape({
   email: yup.string().email('Please enter valid email').required('Email Address id required'),
-  password: yup.string().min(8, ({min}) =>`Password must be atleast ${min} characters` ).required('Password is required'),
+  password: yup.string().min(6, ({min}) =>`Password must be atleast ${min} characters` ).required('Password is required'),
 
   });
   
@@ -20,7 +21,19 @@ const Login = (props) => {
   <Formik
   initialValues={{ email: '', password: '' }}
   validationSchema = {loginValidationSchema}
-  onSubmit={values => console.log(values)}
+  onSubmit={async (values) => {
+    
+    try {
+      const { email, password } = values;
+      const res = await axios.post(`http://10.0.2.2:2800/api/user/login`,{email,password});
+      console.log(res?.data?.token);
+      alert(res?.data?.message);
+      navigation.navigate("Home");
+    } catch (error) {
+      console.log(error);
+      alert(error?.response?.data?.error);
+    }
+  }}
 >
   {({ handleChange, handleBlur, handleSubmit, values, touched, isvalid, errors }) => (
   
@@ -107,7 +120,7 @@ const Login = (props) => {
 
           </View>
           
-          <Btn textColor='#f0f0f0' bgColor='#706EFD' btnLabel="Login" Press={() => alert("Logged In")}  />
+          <Btn textColor='#f0f0f0' bgColor='#706EFD' btnLabel="Login" Press={handleSubmit}  />
           <View style={{ 
             display: 'flex', 
             flexDirection :'row', 

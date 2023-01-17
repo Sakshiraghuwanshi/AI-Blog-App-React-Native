@@ -1,8 +1,8 @@
 import React from 'react';
 import {View, Text, Touchable, TouchableOpacity} from 'react-native';
-import Background from './Background';
-import Btn from './Btn';
-import Field from './Field';
+import Background from '../Background';
+import Btn from '../Btn';
+import Field from '../Field';
 
 const Signup = props => {
   return (
