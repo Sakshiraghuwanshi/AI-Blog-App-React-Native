@@ -1,13 +1,18 @@
-import react from 'react';
-import { View ,Text} from 'react-native';
+import { StyleSheet, Text, View, Image } from "react-native";
+import React from "react";
 
 
-const Tabs= () => {
+const Home = (props) => {
   return (
-    <View>
-      <Text style={{fontSize:60}}>     Hello from  Yashu ,Harshali & sakshi!!</Text>
-    </View>
-  );
-}
 
-export default Tabs;
+<View>
+  <Text> Home </Text>
+</View>
+
+  );
+  
+};
+
+
+
+export default Home;

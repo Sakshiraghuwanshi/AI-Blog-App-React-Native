@@ -1,13 +1,13 @@
 import React from 'react';
-import {View, Text, Touchable, TouchableOpacity,Button} from 'react-native';
-import Background from '../Background';
+import { View, Text, Touchable, TouchableOpacity, Button, TextInput } from 'react-native';
+import Background from '../components/Background';
 import Btn from '../Btn';
 import Field from '../Field';
 
 const Login = (props) => {
   return (
     <Background>
-      <View style={{alignItems: 'center', width: 440}}>
+      <View style={{ alignItems: 'center', width: 440 }}>
         <Text
           style={{
             color: 'white',
@@ -26,7 +26,7 @@ const Login = (props) => {
             paddingTop: 50,
             alignItems: 'center',
           }}>
-          <Text style={{fontSize: 50, color: '#5956E9', fontWeight: 'bold', fontFamily: "cursive"}}>
+          <Text style={{ fontSize: 50, color: '#5956E9', fontWeight: 'bold', fontFamily: "cursive" }}>
             Reset
           </Text>
           <Text
@@ -39,31 +39,30 @@ const Login = (props) => {
             }}>
             Password?
           </Text>
-          <View style={{  marginBottom: 10}}>
-            <Text style={{ fontSize: 14, fontWeight:"400" }}>Please, enter your email address. </Text>
-            <Text style= {{fontSize: 14, fontWeight:"400" }}>You will receive a link to create a new password via email.</Text>
-            </View>
-            
-          <Field
-            placeholder="Email"
-            keyboardType={'email-address'}
-            
-          />
-          <View  style={{  marginBottom: 10}}>
+          <View style={{ marginBottom: 10 }}>
+            <Text style={{ fontSize: 14, fontWeight: "400" }}>Please, enter your email address. </Text>
+            <Text style={{ fontSize: 14, fontWeight: "400" }}>You will receive a link to create a new password via email.</Text>
+          </View>
+
+          <TextInput
+            style={{ borderRadius: 100, color: 'black', paddingHorizontal: 20, width: '78%', backgroundColor: '#c5d5c5', marginVertical: 10 }}
+            placeholderTextColor='grey' placeholder="Email" keyboardType="email-address" ></TextInput>
+
+          <View style={{ marginBottom: 10 }}>
 
           </View>
           <Btn textColor='#f0f0f0' bgColor='#706EFD' btnLabel="Send" Press={() => alert("Link Sent")} />
-          
-            
-            
-        
-            
-            </View>
-          
-            
-          </View>
-  
-      
+
+
+
+
+
+        </View>
+
+
+      </View>
+
+
     </Background>
   );
 };
