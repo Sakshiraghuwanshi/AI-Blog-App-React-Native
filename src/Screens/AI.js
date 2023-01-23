@@ -1,12 +1,13 @@
 import react from 'react';
-import { View ,Text} from 'react-native';
-
+import { View ,Text,StyleSheet} from 'react-native';
+import Header from '../components/Header';
 
 const AI = (props) => {
     return (
             
-        <View>
-          <Text style={{fontSize:78}}>Hello shubham jain</Text>
+        <View style={styles.mainview}>
+            <Header />
+          <Text style={{fontSize:78}}>AI Tab</Text>
                </View>
 
 
@@ -20,5 +21,13 @@ const AI = (props) => {
 
     );
 };
+const styles=StyleSheet.create({
+    mainview:{
+      flex:1,
+     
+      backgroundColor:"#f0f0f0",
+    
+    }
+  })
 
 export default AI;

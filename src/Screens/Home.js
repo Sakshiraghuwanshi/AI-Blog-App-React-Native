@@ -1,11 +1,13 @@
 import { StyleSheet, Text, View, Image,ScrollView } from "react-native";
 import React from "react";
 import BlogPost from '../components/BlogPost'
+import Header from '../components/Header';
 
 const Home = (props) => {
   return (
 
 <View style={styles.mainview}>
+<Header />
  <View style={{marginTop:15}}></View>
 
   < BlogPost/>

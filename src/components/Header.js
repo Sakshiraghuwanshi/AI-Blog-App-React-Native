@@ -1,21 +1,35 @@
-import { StyleSheet, Text, View, Image,ScrollView } from "react-native";
-import React from "react";
+import {View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
+import React from 'react';
 
-
-const Home = (props) => {
+const Header = ({title, icon}) => {
   return (
+    <View style={styles.header}>
+     
 
-<View style={styles.mainview}>
- <Text>Header</Text>
-  
-</View>
-
+      <Text style={[styles.title, {marginLeft: 10}]}>Home</Text>
+    </View>
   );
-  
 };
-
-const styles=StyleSheet.create({
-  
-})
-
-export default Home;
+export default Header;
+const styles = StyleSheet.create({
+  header: {
+    height: 80,
+    width: '100%',
+    flexDirection: 'row',
+    backgroundColor: '#87CEFA',
+    elevation: 20,
+    alignItems: 'center',
+    paddingLeft: 20,
+    borderBottomEndRadius: 30,
+    borderBottomStartRadius:30,
+    
+   
+  },
+  title:{
+    fontSize:32,
+    fontFamily:'cursive',
+    color: 'black',
+    fontWeight: '900'
+  }
+ 
+});
