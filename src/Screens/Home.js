@@ -7,7 +7,7 @@ const Home = (props) => {
   return (
 
 <View style={styles.mainview}>
-<Header />
+<Header title={'Home'} />
  <View style={{marginTop:15}}></View>
 
   < BlogPost/>

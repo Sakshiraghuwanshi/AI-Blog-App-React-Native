@@ -13,18 +13,27 @@ const Tab = createBottomTabNavigator();
 const Tabs= () => {
   return (
    
-     <Tab.Navigator screenOptions={{headerShown:false, tabBarActiveTintColor: 'blue',}}>
+     <Tab.Navigator screenOptions={{headerShown:false, tabBarActiveTintColor: 'blue', tabBarLabelStyle:{
+      fontSize:15,
+      fontWeight:'600',
+      
+     }}}>
       <Tab.Screen name="Home" component={Home} options={
+        
         {
+       
         tabBarStyle: {
           height: 60,
           position: 'absolute',
-          bottom: 15,
-          right: 14,
-          left: 14,
+          bottom: 7,
+          right: 10,
+          left: 10,
           borderRadius: 16,
           elevation: 10,
           backgroundColor: 'white',
+          fontweight:'bold',
+          paddingBottom : 3,
+          paddingTop: 6,
         
         },
         tabBarIcon: ({focused})=> {
@@ -32,6 +41,7 @@ const Tabs= () => {
             <Image source={require("../asset/home.png")} />
           )
         },
+        
      
       }
       } />
@@ -39,10 +49,13 @@ const Tabs= () => {
         tabBarStyle: {
           height: 60,
           position: 'absolute',
-          bottom: 15,
-          right: 14,
-          left: 14,
-          borderRadius: 16
+          bottom: 8,
+          right: 10,
+          left: 10,
+          borderRadius: 16,
+          elevation: 10,
+          backgroundColor: 'white',
+          
         },
         tabBarIcon: ({focused})=> {
           return (
@@ -56,10 +69,13 @@ const Tabs= () => {
         tabBarStyle: {
           height: 60,
           position: 'absolute',
-          bottom: 15,
-          right: 14,
-          left: 14,
-          borderRadius: 16
+          bottom: 8,
+          right: 10,
+          left: 10,
+          borderRadius: 16,
+          elevation: 10,
+          backgroundColor: 'white',
+          
         },
         tabBarIcon: ({focused})=> {
           return (
@@ -71,10 +87,13 @@ const Tabs= () => {
         tabBarStyle: {
           height: 60,
           position: 'absolute',
-          bottom: 15,
-          right: 14,
-          left: 14,
-          borderRadius: 16
+          bottom: 8,
+          right: 10,
+          left: 10,
+          borderRadius: 16,
+          elevation: 10,
+          backgroundColor: 'white',
+          
         },
         tabBarIcon: ({focused})=> {
           return (
@@ -86,10 +105,13 @@ const Tabs= () => {
         tabBarStyle: {
           height: 60,
           position: 'absolute',
-          bottom: 15,
-          right: 14,
-          left: 14,
-          borderRadius: 16
+          bottom: 8,
+          right: 10,
+          left: 10,
+          borderRadius: 16,
+          elevation: 10,
+          backgroundColor: 'white',
+          
         },
         tabBarIcon: ({focused})=> {
           return (

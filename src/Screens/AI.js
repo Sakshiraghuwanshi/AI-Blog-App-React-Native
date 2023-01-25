@@ -6,7 +6,7 @@ const AI = (props) => {
     return (
             
         <View style={styles.mainview}>
-            <Header />
+            <Header title={'AI'} />
           <Text style={{fontSize:78}}>AI Tab</Text>
                </View>
 

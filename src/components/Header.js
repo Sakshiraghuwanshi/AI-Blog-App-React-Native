@@ -6,7 +6,7 @@ const Header = ({title, icon}) => {
     <View style={styles.header}>
      
 
-      <Text style={[styles.title, {marginLeft: 10}]}>Home</Text>
+      <Text style={[styles.title, {marginLeft: 10}]}>{title}</Text>
     </View>
   );
 };
@@ -17,11 +17,10 @@ const styles = StyleSheet.create({
     width: '100%',
     flexDirection: 'row',
     backgroundColor: '#87CEFA',
-    elevation: 20,
+    elevation: 10 ,
     alignItems: 'center',
     paddingLeft: 20,
-    borderBottomEndRadius: 30,
-    borderBottomStartRadius:30,
+   
     
    
   },

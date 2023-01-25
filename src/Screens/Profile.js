@@ -7,7 +7,7 @@ const Profile = (props) => {
             
             
         <View style={styles.mainview}>
-            <Header />
+            <Header title={'Profile'} />
           <Text style={{fontSize:78}}>Profile</Text>
                </View>
 
