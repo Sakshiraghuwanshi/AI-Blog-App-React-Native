@@ -28,7 +28,7 @@ const styles=StyleSheet.create({
     mainview:{
       flex:1,
      
-      backgroundColor:"#f0f0f0",
+      backgroundColor:"#F6EEE0",
     
     }
   })

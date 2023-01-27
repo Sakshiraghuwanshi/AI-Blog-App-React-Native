@@ -1,8 +1,10 @@
 import React from "react";
-import { StyleSheet, FlatList, Text, TouchableOpacity ,Image} from "react-native";
+import { StyleSheet, FlatList, Text, TouchableOpacity ,Image,OnPress} from "react-native";
+import { NavigationContainer } from '@react-navigation/native';
 
 
-const Category = () => {
+
+const Category = (navigation) => {
     const names = [
         {
             index: "1",
@@ -33,6 +35,7 @@ const Category = () => {
             name: "Religion Blogs",
         },
     ];
+    
     return (
         <FlatList
             keyExtractor={(key) => {
@@ -43,14 +46,18 @@ const Category = () => {
             renderItem={({ item }) => {
                 console.log(item.name);
                 return (
-                    <TouchableOpacity style={styles.categorybox}>
+                    <TouchableOpacity style={styles.categorybox}
+                    onPress={() =>navigation.navigate('Home',{item:Travel})}>
                         <Text style={styles.textStyle}> {item.name} </Text>
                     </TouchableOpacity>
                 );
             }}
         />
+    
     );
+      
 };
+
 
 const styles = StyleSheet.create({
     textStyle: {

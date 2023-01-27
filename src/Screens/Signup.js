@@ -80,7 +80,7 @@ const Signup = props => {
             btnLabel="Signup"
             Press={() => {
 
-              props.navigation.navigate('Home');
+              props.navigation.navigate('Login');
             }}
           />
           <View style={{ marginBottom: 1 }}></View>
@@ -94,7 +94,7 @@ const Signup = props => {
               Already have an account ?{' '}
             </Text>
             <TouchableOpacity
-              onPress={() => props.navigation.navigate('Login')}>
+               onPress={() => props.navigation.navigate('Login')}>
               <Text
                 style={{ color: '#5956E9', fontWeight: 'bold', fontSize: 16 }}>
                 Login
