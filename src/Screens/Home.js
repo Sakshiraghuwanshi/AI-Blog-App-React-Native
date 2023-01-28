@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, Image,ScrollView } from "react-native";
 import React from "react";
 import BlogPost from '../components/BlogPost'
 import Header from '../components/Header';
+import Category from "../components/Category";
 
 const Home = (props) => {
   return (
@@ -9,7 +10,8 @@ const Home = (props) => {
 <View style={styles.mainview}>
 <Header title={'Home'} />
  <View style={{marginTop:15}}></View>
-
+ < Category />
+ 
   < BlogPost/>
 
   

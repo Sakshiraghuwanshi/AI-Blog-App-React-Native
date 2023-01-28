@@ -80,7 +80,7 @@ const Signup = props => {
             btnLabel="Signup"
             Press={() => {
 
-              props.navigation.navigate('Login');
+              props.navigation.navigate('Home');
             }}
           />
           <View style={{ marginBottom: 1 }}></View>

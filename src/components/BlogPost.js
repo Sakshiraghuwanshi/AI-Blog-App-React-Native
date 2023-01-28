@@ -5,10 +5,11 @@ import {Card} from 'react-native-shadow-cards';
 const Home = (props) => {
   return (
 
-<View style={{marginLeft:40}}>
-  <Card style= {{width:'90%',height: '70%',elevation:10} } >
-    <Text style={{fontSize:18,fontWeight:'bold',color:'black',alignItems:'center' ,marginLeft:100}}>react native</Text>
+<View style={{marginLeft:15,marginBottom:170}}>
+  <Card style= {{elevation:10,height:330,borderRadius: 25 ,width:380 } } >
+    <Text style={{fontSize:18,fontWeight:'bold',color:'black',alignItems:'center' ,marginLeft:150}}>react native</Text>
   </Card>
+  
 </View>
 
   );

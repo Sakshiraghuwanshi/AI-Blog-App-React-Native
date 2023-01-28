@@ -1,38 +1,38 @@
 import React from "react";
 import { StyleSheet, FlatList, Text, TouchableOpacity ,Image,OnPress} from "react-native";
-import { NavigationContainer } from '@react-navigation/native';
 
 
 
-const Category = (navigation) => {
+
+const Category = () => {
     const names = [
         {
             index: "1",
-            name: "Travel Blogs",
+            name: "Travel ",
         },
         {
             index: "2",
-            name: "Technology Blogs",
+            name: "Technology ",
         },
         {
             index: "3",
-            name: "Food Blogs",
+            name: "Food ",
         },
         {
             index: "4",
-            name: "Lifestyle Blogs",
+            name: "Lifestyle ",
         },
         {
             index: "5",
-            name: "Sports Blogs",
+            name: "Sports ",
         },
         {
             index: "6",
-            name: "Music Blogs",
+            name: "Music ",
         },
         {
             index: "7",
-            name: "Religion Blogs",
+            name: "Religion ",
         },
     ];
     
@@ -41,13 +41,16 @@ const Category = (navigation) => {
             keyExtractor={(key) => {
                 return key.index;
             }}
+            horizontal
+            showsHorizontalScrollIndicator={false}
+           
 
             data={names}
             renderItem={({ item }) => {
                 console.log(item.name);
                 return (
                     <TouchableOpacity style={styles.categorybox}
-                    onPress={() =>navigation.navigate('Home',{item:Travel})}>
+                  >
                         <Text style={styles.textStyle}> {item.name} </Text>
                     </TouchableOpacity>
                 );
@@ -67,11 +70,11 @@ const styles = StyleSheet.create({
 
     categorybox: {
         marginBottom: 10,
-        width: 390,
-        height: 140,
-        borderRadius: 10,
-        marginLeft: 10,
-        marginRight: 10,
+        width: 120,
+        height: 40,
+        borderRadius: 20,
+        marginLeft: 8,
+        marginRight: 8,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: "#87CEFA"
