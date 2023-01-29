@@ -1,5 +1,6 @@
+
 import React from "react";
-import { StyleSheet, FlatList, Text, TouchableOpacity ,Image,OnPress} from "react-native";
+import { StyleSheet, FlatList, Text, TouchableOpacity ,View,Image,OnPress,ScrollView} from "react-native";
 
 
 
@@ -37,18 +38,21 @@ const Category = () => {
     ];
     
     return (
-        <FlatList
+        <View style={{flex:1}}>
+
+        <FlatList 
             keyExtractor={(key) => {
                 return key.index;
             }}
-            horizontal
-            showsHorizontalScrollIndicator={false}
+           horizontal
+           showsHorizontalScrollIndicator={false}
            
 
             data={names}
             renderItem={({ item }) => {
                 console.log(item.name);
                 return (
+                  
                     <TouchableOpacity style={styles.categorybox}
                   >
                         <Text style={styles.textStyle}> {item.name} </Text>
@@ -56,7 +60,8 @@ const Category = () => {
                 );
             }}
         />
-    
+       
+    </View>
     );
       
 };
@@ -77,7 +82,8 @@ const styles = StyleSheet.create({
         marginRight: 8,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: "#87CEFA"
+        backgroundColor: "#f0f0f0",
+        elevation:10
     },
     
 

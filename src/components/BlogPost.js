@@ -7,7 +7,7 @@ const Home = (props) => {
 
 <View style={{marginLeft:15,marginBottom:170}}>
   <Card style= {{elevation:10,height:330,borderRadius: 25 ,width:380 } } >
-    <Text style={{fontSize:18,fontWeight:'bold',color:'black',alignItems:'center' ,marginLeft:150}}>react native</Text>
+    <Text style={{fontSize:18,fontWeight:'bold',color:'purple',alignItems:'center' ,marginLeft:150}}>react native</Text>
   </Card>
   
 </View>

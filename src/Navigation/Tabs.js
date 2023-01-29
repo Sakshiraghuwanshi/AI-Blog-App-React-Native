@@ -13,7 +13,7 @@ const Tab = createBottomTabNavigator();
 const Tabs= () => {
   return (
    
-     <Tab.Navigator screenOptions={{headerShown:false, tabBarActiveTintColor: 'blue', tabBarLabelStyle:{
+     <Tab.Navigator screenOptions={{headerShown:false, tabBarActiveTintColor: 'purple', tabBarLabelStyle:{
       fontSize:15,
       fontWeight:'600',
       
@@ -79,7 +79,7 @@ const Tabs= () => {
         },
         tabBarIcon: ({focused})=> {
           return (
-            <Image source={require("../asset/plus.png")} />
+            <Image source={require("../asset/AI.png")} />
           )
         }
       }} />
