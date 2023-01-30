@@ -38,7 +38,7 @@ const Tabs= () => {
         },
         tabBarIcon: ({focused})=> {
           return (
-            <Image source={require("../asset/home.png")} />
+            <Image source={require("../asset/bhome.png")} />
           )
         },
         
@@ -59,7 +59,7 @@ const Tabs= () => {
         },
         tabBarIcon: ({focused})=> {
           return (
-            <Image source={require("../asset/category.png")} />
+            <Image source={require("../asset/bcat.png")} />
           )
         }
         
@@ -97,7 +97,7 @@ const Tabs= () => {
         },
         tabBarIcon: ({focused})=> {
           return (
-            <Image source={require("../asset/edit.png")} />
+            <Image source={require("../asset/pen.png")} />
           )
         }
       }} />
@@ -115,7 +115,7 @@ const Tabs= () => {
         },
         tabBarIcon: ({focused})=> {
           return (
-            <Image source={require("../asset/profile.png")} />
+            <Image source={require("../asset/acc.png")} />
           )
         }
       }} />
