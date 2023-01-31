@@ -7,6 +7,7 @@ const Header = ({title, icon}) => {
      
 
       <Text style={[styles.title, {marginLeft: 10}]}>{title}</Text>
+      
     </View>
   );
 };

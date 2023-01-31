@@ -1,6 +1,7 @@
 import react from 'react';
 import { View ,Text,StyleSheet} from 'react-native';
 import Header from '../components/Header';
+import UserAcc from '../components/UserAcc'
 
 const Profile = (props) => {
     return (
@@ -8,7 +9,7 @@ const Profile = (props) => {
             
         <View style={styles.mainview}>
             <Header title={'Profile'} />
-          <Text style={{fontSize:78}}>Profile</Text>
+        <UserAcc /> 
                </View>
 
 

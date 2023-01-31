@@ -71,6 +71,8 @@ const styles = StyleSheet.create({
     textStyle: {
         fontSize: 20,
         color: 'black',
+        fontWeight:'490',
+      
     },
 
     categorybox: {
@@ -83,7 +85,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: "#f0f0f0",
-        elevation:10
+        elevation:10,   
+        margin:1,
     },
     
 
