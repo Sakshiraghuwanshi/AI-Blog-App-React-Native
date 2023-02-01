@@ -8,7 +8,7 @@ const WriteBlog = (props) => {
            
         <View style={styles.mainview}>
             <Header title={'WriteBlogs'} />
-          <Text style={{fontSize:78}}>Blogs</Text>
+          
                </View>
 
 

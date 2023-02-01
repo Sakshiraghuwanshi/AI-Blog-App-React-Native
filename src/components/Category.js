@@ -9,15 +9,15 @@ const Category = () => {
     const names = [
         {
             index: "1",
-            name: "Travel ",
+            name: "All Topics ",
         },
         {
             index: "2",
-            name: "Technology ",
+            name: "Travel",
         },
         {
             index: "3",
-            name: "Food ",
+            name: "Technology",
         },
         {
             index: "4",

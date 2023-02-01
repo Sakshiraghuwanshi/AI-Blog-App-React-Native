@@ -1,50 +1,57 @@
+
+
 import React from "react";
-import { StyleSheet, Text, View, SafeAreaView, Image, ScrollView } from "react-native";
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import { StyleSheet, Text, View, SafeAreaView, Image, ScrollView, TouchableOpacity,press } from "react-native";
+import { Button } from "react-native-paper";
 
 
 
-const UserAcc = () => {
+
+const UserAcc = ({navigation}) => {
     return (
-        
-            <ScrollView showsVerticalScrollIndicator={false}>
-                <View style={styles.titleBar}>
-                   
-                </View>
+        <ScrollView>
 
-                <View style={{ alignSelf: "center" }}>
-                    <View style={styles.profileImage}>
+         
+            <View style={{ alignSelf: "center" }}>
+                <View style={styles.profileImage}>
                     <Image source={require("../asset/profilep.jpg")} style={styles.image} resizeMode="center"></Image>
-                    </View>
-                    
-                   
+                </View>
+
+                <TouchableOpacity>
                     <View style={styles.add}>
-                    <Image source={require("../asset/userp.png")}></Image>
+                        <Image source={require("../asset/userp.png")}></Image>
                     </View>
-                </View>
+                </TouchableOpacity>
+            </View>
 
-                <View style={styles.infoContainer}>
-                    <Text style={[styles.text, { fontWeight: "300", fontSize: 36,color:'black' }]}>Piyu</Text>
-                    <Text style={[styles.text, { color: "#AEB5BC", fontSize: 14 }]}>Blogger</Text>
-                </View>
-
-                <View style={styles.statsContainer}>
-                    <View style={styles.statsBox}>
-                        <Text style={[styles.text, { fontSize: 24 }]}>1</Text>
-                        <Text style={[styles.text, styles.subText]}>Posts</Text>
-                    </View>
-                    <View style={[styles.statsBox, { borderColor: "#DFD8C8", borderLeftWidth: 1, borderRightWidth: 1 }]}>
-                        <Text style={[styles.text, { fontSize: 24 }]}>4</Text>
-                        <Text style={[styles.text, styles.subText]}>Saved</Text>
-                    </View>
+            <View style={styles.infoContainer}>
+                <Text style={[styles.text, { fontWeight: "300", fontSize: 34, color: 'black', fontFamily: "serif",marginBottom:5 }]}>Marie</Text>
+                <Text style={[styles.text, { fontWeight: "200", fontSize: 17, color: 'black',fontFamily: "serif" }]}>Hey,I'm marie from LA.I like to Blog.</Text>
+            </View>
+            <View>
+                <TouchableOpacity
+                  onPress={() =>  navigation.navigate("Splash1") }
+                    style={styles.btn}>
+                    <Text style={{ color: 'purple', fontSize: 22, fontWeight: '700' }}>Blogs</Text>
+                </TouchableOpacity>
+            </View>
+            <View>
+                <TouchableOpacity
                    
-                </View>
+                    style={styles.btn}>
+                    <Text style={{ color: 'purple', fontSize: 22, fontWeight: '700' }}>Edit Profile</Text>
+                </TouchableOpacity>
+            </View>
+            <View>
+                <TouchableOpacity
+                   
+                    style={styles.btn}>
+                    <Text style={{ color: 'purple', fontSize: 22, fontWeight: '700' }}>Logout</Text>
+                </TouchableOpacity>
 
-                
+            </View>
+        </ScrollView>
 
-                    
-            </ScrollView>
-      
     );
 }
 
@@ -55,7 +62,7 @@ const styles = StyleSheet.create({
     },
     text: {
         fontFamily: "HelveticaNeue",
-        color: "#52575D"
+        color: "Black"
     },
     image: {
         flex: 1,
@@ -70,7 +77,7 @@ const styles = StyleSheet.create({
     },
     subText: {
         fontSize: 12,
-        color: "#AEB5BC",
+        color: "black",
         textTransform: "uppercase",
         fontWeight: "500"
     },
@@ -78,10 +85,13 @@ const styles = StyleSheet.create({
         width: 150,
         height: 150,
         borderRadius: 100,
-        overflow: "hidden"
+        overflow: "hidden",
+        marginTop: 30,
+        borderWidth: 3,
+        borderColor: '#c59fc5',
     },
-    
-   
+
+
     add: {
         backgroundColor: "#f0f0f0",
         position: "absolute",
@@ -96,21 +106,27 @@ const styles = StyleSheet.create({
     infoContainer: {
         alignSelf: "center",
         alignItems: "center",
-        marginTop: 16
+        marginTop: 10
     },
-    statsContainer: {
-        flexDirection: "row",
-        alignSelf: "center",
-        marginTop: 32
-    },
-    statsBox: {
-        alignItems: "center",
-        flex: 1
-    },
-    
-   
-   
-   
+    btn: {
+        backgroundColor: 'white',
+        borderRadius: 10,
+        alignItems: 'center',
+        width: 370,
+        height: 60,
+        paddingVertical: 15,
+        marginBottom:-8,
+        marginTop:30,
+        marginLeft: 21,
+       elevation:30
+
+
+
+    }
+
+
+
+
 });
 
 export default UserAcc;

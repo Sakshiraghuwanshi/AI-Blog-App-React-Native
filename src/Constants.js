@@ -2,28 +2,4 @@
 // export const whiteb = '#f0f0f0';
 // export const white= '#5956E9';
 //#706EFD
-
-import { StyleSheet, Text, View, Image } from "react-native";
-import React from "react";
-import {Card} from 'react-native-shadow-cards';
-
-const Home = (props) => {
-  return (
-
-<View style={{marginLeft:15,marginBottom:20}}>
-  <Card style= {{elevation:10,height:330,borderRadius: 25 ,width:380 } } >
-    <Text style={{fontSize:18,fontWeight:'bold',color:'purple',alignItems:'center' ,marginLeft:150}}>react native</Text>
-  </Card>
-  
-</View>
-
-  );
-  
-};
-const styles=StyleSheet.create({
-  
-  
-})
-
-
-export default Home;
+<Text style={{marginLeft:160,fontSize:22,color:'black',marginBottom:13,backgroundColor:'#D8BFD8',paddingStart:10,paddingBottom:1,height:32,width:100,borderRadius:100,elevation:10}}>Blogs[1]</Text>
