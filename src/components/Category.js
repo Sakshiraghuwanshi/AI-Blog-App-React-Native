@@ -9,7 +9,7 @@ const Category = () => {
     const names = [
         {
             index: "1",
-            name: "All Topics ",
+            name: "Featured Post",
         },
         {
             index: "2",

@@ -1,11 +1,28 @@
 import { StyleSheet, Text, View, Image,ScrollView } from "react-native";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import BlogPost from '../components/BlogPost'
 import Header from '../components/Header';
 import Category from "../components/Category";
+import axios from "axios";
  
 
 const Home = (props) => {
+
+  const [posts, setPosts] = useState([]);
+  
+  useEffect(() => {
+    const fetchBlog = async () => {
+      try {
+        const res = await axios.get(`http://10.0.2.2:2800/api/post/posts`);
+        setPosts(res?.data?.posts);
+        console.log(res?.data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    fetchBlog();
+  }, []);
+  
   return (
 
 <View style={styles.mainview}>
@@ -14,10 +31,15 @@ const Home = (props) => {
  <ScrollView>
  < Category />
  <View style={{marginBottom:8}}/>
-  < BlogPost/>
-  < BlogPost/>
-  <BlogPost />
-  <BlogPost />
+  
+  {
+    posts.map((post) => {
+      return (
+        < BlogPost post={post}/>
+      )
+    })
+  }
+  {/* < BlogPost/> */}
   </ScrollView>
 
   
