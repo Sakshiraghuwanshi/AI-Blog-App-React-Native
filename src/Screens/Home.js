@@ -1,15 +1,15 @@
-import { StyleSheet, Text, View, Image,ScrollView } from "react-native";
+import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
 import React, { useEffect, useState } from "react";
 import BlogPost from '../components/BlogPost'
 import Header from '../components/Header';
 import Category from "../components/Category";
 import axios from "axios";
- 
+
 
 const Home = (props) => {
 
   const [posts, setPosts] = useState([]);
-  
+
   useEffect(() => {
     const fetchBlog = async () => {
       try {
@@ -22,39 +22,39 @@ const Home = (props) => {
     }
     fetchBlog();
   }, []);
-  
+
   return (
 
-<View style={styles.mainview}>
-<Header title={'Home'} />
- <View style={{marginTop:15}}></View>
- <ScrollView>
- < Category />
- <View style={{marginBottom:8}}/>
-  
-  {
-    posts.map((post) => {
-      return (
-        < BlogPost post={post}/>
-      )
-    })
-  }
-  {/* < BlogPost/> */}
-  </ScrollView>
+    <View style={styles.mainview}>
+      <Header title={'Home'} />
+      <View style={{ marginTop: 15 }}></View>
+      <ScrollView>
+        < Category />
+        <View style={{ marginBottom: 8 }} />
 
-  
-</View>
+        {
+          posts.map((post) => {
+            return (
+              < BlogPost post={post} />
+            )
+          })
+        }
+        {/* < BlogPost/> */}
+      </ScrollView>
+
+
+    </View>
 
   );
-  
+
 };
 
-const styles=StyleSheet.create({
-  mainview:{
-    flex:1,
-   
-    backgroundColor:"#F6EEE0",
-  
+const styles = StyleSheet.create({
+  mainview: {
+    flex: 1,
+
+    backgroundColor: "#F6EEE0",
+
   }
 })
 

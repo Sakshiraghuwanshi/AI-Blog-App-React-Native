@@ -13,28 +13,18 @@ const Category = () => {
         },
         {
             index: "2",
-            name: "Travel",
-        },
-        {
-            index: "3",
             name: "Technology",
         },
         {
+            index: "3",
+            name: "Lifestyle",
+        },
+        {
             index: "4",
-            name: "Lifestyle ",
+            name: "Travel",
         },
-        {
-            index: "5",
-            name: "Sports ",
-        },
-        {
-            index: "6",
-            name: "Music ",
-        },
-        {
-            index: "7",
-            name: "Religion ",
-        },
+      
+        
     ];
     
     return (
@@ -77,7 +67,7 @@ const styles = StyleSheet.create({
 
     categorybox: {
         marginBottom: 10,
-        width: 120,
+        width: 150,
         height: 40,
         borderRadius: 20,
         marginLeft: 8,

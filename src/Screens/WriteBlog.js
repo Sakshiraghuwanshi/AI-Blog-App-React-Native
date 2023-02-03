@@ -1,6 +1,7 @@
 import react from 'react';
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, TextInput, TouchableOpacity, ScrollView,Image } from 'react-native';
 import Header from '../components/Header';
+import Dropdown from '../components/Dropdown';
 
 const WriteBlog = (props) => {
   return (
@@ -9,7 +10,11 @@ const WriteBlog = (props) => {
     <View style={styles.mainview}>
       <Header title={'WriteBlogs'} />
       <ScrollView>
-        <View style={{marginBottom:30}}/>
+     <View style={{marginTop:20}}>
+      <Text style={{marginLeft:60,color:'purple',fontFamily:'cursive',fontWeight:'700',fontSize:30,}}>Start Writing Your Blogs</Text>
+     </View>
+     
+        <View style={{marginBottom:10}}/>
         <View>
           <TextInput
            editable
@@ -23,11 +28,23 @@ const WriteBlog = (props) => {
           <TextInput
            editable
            multiline
+           numberOfLines={4}
+           maxLength={290}
+            style={styles.title}
+            placeholderTextColor='purple' placeholder="Enter Meta" ></TextInput>
+        </View>
+        <View>
+          <TextInput
+           editable
+           multiline
            numberOfLines={7}
            maxLength={290}
             style={styles.tags}
             placeholderTextColor='purple' placeholder="Tags" ></TextInput>
         </View>
+        <View style={{marginBottom:-89}}/>
+        <Dropdown/>
+        <View style={{marginBottom:10}}/>
         <View>
           <TextInput
            editable
@@ -41,13 +58,6 @@ const WriteBlog = (props) => {
 
       </ScrollView>
     </View>
-
-
-
-
-
-
-
 
 
   );

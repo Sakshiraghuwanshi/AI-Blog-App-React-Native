@@ -1,5 +1,5 @@
 import react from 'react';
-import { View ,Text,StyleSheet} from 'react-native';
+import { View ,Text,StyleSheet,TextInput} from 'react-native';
 import Header from '../components/Header';
 
 const AI = (props) => {
@@ -7,7 +7,24 @@ const AI = (props) => {
             
         <View style={styles.mainview}>
             <Header title={'AI'} />
-          <Text style={{fontSize:78}}>AI Tab</Text>
+            <View>
+          <TextInput
+           editable
+           multiline
+           numberOfLines={4}
+           maxLength={290}
+            style={styles.title}
+            placeholderTextColor='purple' placeholder="Search Title" ></TextInput>
+        </View>
+        <View>
+          <TextInput
+           editable
+           multiline
+           numberOfLines={4}
+           maxLength={290}
+            style={styles.title}
+            placeholderTextColor='purple' placeholder="Search Blogs" ></TextInput>
+        </View>
                </View>
 
 
@@ -27,7 +44,8 @@ const styles=StyleSheet.create({
      
       backgroundColor:"#F6EEE0",
     
-    }
+    },
+    
   })
 
 export default AI;
