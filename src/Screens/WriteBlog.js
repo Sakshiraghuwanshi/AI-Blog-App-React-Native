@@ -31,7 +31,7 @@ const WriteBlog = (props) => {
            numberOfLines={4}
            maxLength={290}
             style={styles.title}
-            placeholderTextColor='purple' placeholder="Enter Meta" ></TextInput>
+            placeholderTextColor='purple' placeholder="Enter Short Description" ></TextInput>
         </View>
         <View>
           <TextInput
@@ -70,7 +70,6 @@ const styles = StyleSheet.create({
   },
   title: {
     borderRadius: 10,
-    color: 'black',
     paddingHorizontal: 15,
     paddingBottom:10,
     width: 390,
@@ -83,7 +82,6 @@ const styles = StyleSheet.create({
   },
   tags: {
     borderRadius: 10,
-    color: 'black',
     paddingHorizontal: 15,
     paddingBottom:10,
     width: 390,
@@ -95,7 +93,6 @@ const styles = StyleSheet.create({
   },
   content: {
     borderRadius: 10,
-    color: 'black',
     paddingHorizontal: 15,
     paddingBottom:155,
     width: 390,

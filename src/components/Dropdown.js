@@ -5,6 +5,7 @@ import {
     Image,
     TextInput,
     FlatList,
+    ScrollView
   } from 'react-native';
   import React, {useRef, useState} from 'react';
   const Category = [
@@ -46,7 +47,9 @@ import {
    
   
     return (
+      <ScrollView>
       <View style={{flex: 1}}>
+        
         <TouchableOpacity
           style={{
             width: 390,
@@ -81,6 +84,7 @@ import {
         )}
           
         </TouchableOpacity>
+      
         {clicked ? (
           <View
             style={{
@@ -92,8 +96,7 @@ import {
               backgroundColor: '#f0f0f0',
               borderRadius: 10,
             }}>
-       
-             
+      
             <FlatList
               data={data}
               renderItem={({item, index}) => {
@@ -115,12 +118,14 @@ import {
                     }}>
                     <Text style={{fontWeight: '600',color:'purple'}}>{item.name}</Text>
                   </TouchableOpacity>
+              
                 );
               }}
             />
           </View>
         ) : null}
       </View>
+      </ScrollView>
     );
   };
   

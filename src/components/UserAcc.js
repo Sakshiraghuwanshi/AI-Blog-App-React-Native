@@ -1,14 +1,16 @@
 
 
 import React from "react";
-import { StyleSheet, Text, View, SafeAreaView, Image, ScrollView, TouchableOpacity,press } from "react-native";
-import { Button } from "react-native-paper";
+import { StyleSheet, Text, View,  Image, ScrollView, TouchableOpacity,press } from "react-native";
 
 
 
 
-const UserAcc = ({navigation}) => {
+
+const UserAcc = ({})=> {
+   
     return (
+        
         <ScrollView>
 
          
@@ -30,14 +32,14 @@ const UserAcc = ({navigation}) => {
             </View>
             <View>
                 <TouchableOpacity
-                  onPress={() =>  navigation.navigate("Splash1") }
+                  onPress={() => props. navigation.navigate("Splash1") }
                     style={styles.btn}>
                     <Text style={{ color: 'purple', fontSize: 22, fontWeight: '700' }}>Blogs</Text>
                 </TouchableOpacity>
             </View>
             <View>
                 <TouchableOpacity
-                   
+                    onPress={() => props.navigation.navigate('Login')}
                     style={styles.btn}>
                     <Text style={{ color: 'purple', fontSize: 22, fontWeight: '700' }}>Edit Profile</Text>
                 </TouchableOpacity>
