@@ -1,8 +1,9 @@
 
 import { StyleSheet, View, Image, TouchableOpacity,ScrollView } from "react-native";
 import React from "react";
-
+import Header from '../components/Header';
 import { Button, Card, Text } from 'react-native-paper';
+
 const UserBlogs = (props) => {
   return (
     <View style={styles.mainview}>

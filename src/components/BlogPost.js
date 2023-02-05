@@ -20,7 +20,7 @@ const BlogPost = ({post}) => {
          
         </Card.Content>
        
-        <TouchableOpacity>
+        <TouchableOpacity >
           <Button style={{marginLeft:260,marginTop:-28}}>Read More</Button>
         </TouchableOpacity>
 

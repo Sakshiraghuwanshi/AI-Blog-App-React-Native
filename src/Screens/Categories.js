@@ -51,7 +51,9 @@ const Categories = (props) => {
                         console.log(item.name);
                         return (
 
-                            <TouchableOpacity style={styles.categorybox}
+                            <TouchableOpacity 
+                           
+                            style={styles.categorybox}
                             >
                                 <Text style={styles.textStyle}> {item.name} </Text>
                             </TouchableOpacity>

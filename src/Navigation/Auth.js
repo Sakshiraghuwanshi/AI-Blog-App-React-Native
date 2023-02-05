@@ -33,6 +33,7 @@ const Auth = () => {
         <Stack.Screen name="WriteBlog" component={WriteBlog} />
         <Stack.Screen name="AI" component={AI} />
         <Stack.Screen name="Profile" component={Profile} />
+        
 
       </Stack.Navigator>
     </NavigationContainer>

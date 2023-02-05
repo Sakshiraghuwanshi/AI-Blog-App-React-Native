@@ -42,7 +42,14 @@ const WriteBlog = (props) => {
             style={styles.tags}
             placeholderTextColor='purple' placeholder="Tags" ></TextInput>
         </View>
-        <View style={{marginBottom:-89}}/>
+        <View>
+          <TouchableOpacity 
+          
+          >
+    
+          </TouchableOpacity>
+        </View>
+        <View style={{marginBottom:-80}}/>
         <Dropdown/>
         <View style={{marginBottom:10}}/>
         <View>
