@@ -7,7 +7,7 @@ import { StyleSheet, Text, View,  Image, ScrollView, TouchableOpacity,press } fr
 
 
 
-const UserAcc = ({props})=> {
+const UserAcc = (props)=> {
    
     return (
         
@@ -32,7 +32,7 @@ const UserAcc = ({props})=> {
             </View>
             <View>
                 <TouchableOpacity
-                  onPress={() => props. navigation.navigate("UserBlogs") }
+                  onPress={() => props.navigation.navigate('UserBlogs')}
                     style={styles.btn}>
                     <Text style={{ color: 'purple', fontSize: 22, fontWeight: '700' }}>Blogs</Text>
                 </TouchableOpacity>

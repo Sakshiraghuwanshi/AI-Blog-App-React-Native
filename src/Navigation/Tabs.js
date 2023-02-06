@@ -5,6 +5,8 @@ import WriteBlog from '../Screens/WriteBlog';
 import AI from '../Screens/AI';
 import Profile from '../Screens/Profile';
 import { StyleSheet, Text, View, Image,ScrollView } from "react-native";
+import UserBlogs from '../components/UserBlogs';
+import UserAcc from '../components/UserAcc';
 
 
 

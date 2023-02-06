@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
+import { StyleSheet, Text, View, Image, ScrollView, TouchableOpacity } from "react-native";
 import React, { useEffect, useState } from "react";
 import BlogPost from '../components/BlogPost'
 import Header from '../components/Header';
@@ -35,7 +35,9 @@ const Home = (props) => {
         {
           posts.map((post) => {
             return (
-              < BlogPost post={post} />
+              <TouchableOpacity onPress={() => props.navigation.navigate('AI')}>
+                < BlogPost post={post} />
+              </TouchableOpacity>
             )
           })
         }

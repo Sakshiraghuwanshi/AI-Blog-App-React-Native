@@ -4,7 +4,6 @@ import { StyleSheet, FlatList, Text, TouchableOpacity ,View,Image,OnPress,Scroll
 
 
 
-
 const Category = () => {
     const names = [
         {

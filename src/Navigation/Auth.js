@@ -14,7 +14,8 @@ import AI from '../Screens/AI'
 import { BottomTabBar } from '@react-navigation/bottom-tabs';
 import Profile from '../Screens/Profile';
 import Tabs from '../Navigation/Tabs';
-
+import UserAcc from '../components/UserAcc';
+import UserBlogs from '../components/UserBlogs';
 
 
 const Stack = createNativeStackNavigator();
@@ -33,6 +34,8 @@ const Auth = () => {
         <Stack.Screen name="WriteBlog" component={WriteBlog} />
         <Stack.Screen name="AI" component={AI} />
         <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="UserBlogs" component={UserBlogs} />
+        
         
 
       </Stack.Navigator>

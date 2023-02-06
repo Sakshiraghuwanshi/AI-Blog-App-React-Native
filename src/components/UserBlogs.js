@@ -7,7 +7,7 @@ import { Button, Card, Text } from 'react-native-paper';
 const UserBlogs = (props) => {
   return (
     <View style={styles.mainview}>
-    <Header title={'Blogs'} />
+    
       <ScrollView>
     <View style={{ marginLeft: 15, marginBottom:20}}>
       <Card style={{ elevation: 30, height: 310, borderRadius: 25, width: 380 ,flex:1}} >

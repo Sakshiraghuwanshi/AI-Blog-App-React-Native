@@ -3,7 +3,7 @@ import { StyleSheet, View, Image, TouchableOpacity } from "react-native";
 import React from "react";
 
 import { Button, Card, Text } from 'react-native-paper';
-const BlogPost = ({post}) => {
+const BlogPost = ({post , navigation}) => {
   return (
 
     <View style={{ marginLeft: 15, marginBottom: 20 }}>
@@ -20,9 +20,9 @@ const BlogPost = ({post}) => {
          
         </Card.Content>
        
-        <TouchableOpacity >
-          <Button style={{marginLeft:260,marginTop:-28}}>Read More</Button>
-        </TouchableOpacity>
+       
+          <Text style={{marginLeft:285,marginTop:-20,color:'purple',fontWeight:'bold'}}>Read More</Text>
+      
 
 
       </Card>

@@ -4,13 +4,14 @@ import Header from '../components/Header';
 import UserAcc from '../components/UserAcc'
 import UserBlogs from '../components/UserBlogs'
 const Profile = (props) => {
+    const {navigation} = props;
     return (
             
             
         <View style={styles.mainview}>
             <Header title={'Profile'} />
             <ScrollView>
-       <UserAcc />
+       <UserAcc navigation={navigation} />
       
        </ScrollView>
                </View>
