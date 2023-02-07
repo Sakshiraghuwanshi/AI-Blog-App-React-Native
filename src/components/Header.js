@@ -1,13 +1,13 @@
-import {View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import React from 'react';
 
-const Header = ({title, icon}) => {
+const Header = ({ title, icon }) => {
   return (
     <View style={styles.header}>
-     
 
-      <Text style={[styles.title, {marginLeft: 10}]}>{title}</Text>
-      
+
+      <Text style={[styles.title, { marginLeft: 10 }]}>{title}</Text>
+
     </View>
   );
 };
@@ -18,18 +18,18 @@ const styles = StyleSheet.create({
     width: '100%',
     flexDirection: 'row',
     backgroundColor: '#c59fc5',
-    elevation: 20 ,
+    elevation: 20,
     alignItems: 'center',
     paddingLeft: 20,
-   
-    
-   
+
+
+
   },
-  title:{
-    fontSize:32,
-    fontFamily:'cursive',
+  title: {
+    fontSize: 32,
+    fontFamily: 'cursive',
     color: 'black',
     fontWeight: '900'
   }
- 
+
 });
