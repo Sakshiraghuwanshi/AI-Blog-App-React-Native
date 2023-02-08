@@ -2,8 +2,6 @@
 import React from 'react';
 import { View, StyleSheet, Text, Image, TouchableOpacity, Press } from 'react-native';
 import Background from '../components/Background';
-import Btn from '../Btn';
-
 
 
 const Splash = (props) => {

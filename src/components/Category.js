@@ -1,6 +1,6 @@
 
 import React from "react";
-import { StyleSheet, FlatList, Text, TouchableOpacity ,View,Image,OnPress,ScrollView} from "react-native";
+import { StyleSheet, FlatList, Text, TouchableOpacity, View, Image, OnPress, ScrollView } from "react-native";
 
 
 
@@ -22,37 +22,37 @@ const Category = () => {
             index: "4",
             name: "Travel",
         },
-      
-        
+
+
     ];
-    
+
     return (
-        <View style={{flex:1}}>
+        <View style={{ flex: 1 }}>
 
-        <FlatList 
-            keyExtractor={(key) => {
-                return key.index;
-            }}
-           horizontal
-           showsHorizontalScrollIndicator={false}
-           
+            <FlatList
+                keyExtractor={(key) => {
+                    return key.index;
+                }}
+                horizontal
+                showsHorizontalScrollIndicator={false}
 
-            data={names}
-            renderItem={({ item }) => {
-                console.log(item.name);
-                return (
-                  
-                    <TouchableOpacity style={styles.categorybox}
-                  >
-                        <Text style={styles.textStyle}> {item.name} </Text>
-                    </TouchableOpacity>
-                );
-            }}
-        />
-       
-    </View>
+
+                data={names}
+                renderItem={({ item }) => {
+                    console.log(item.name);
+                    return (
+
+                        <TouchableOpacity style={styles.categorybox}
+                        >
+                            <Text style={styles.textStyle}> {item.name} </Text>
+                        </TouchableOpacity>
+                    );
+                }}
+            />
+
+        </View>
     );
-      
+
 };
 
 
@@ -60,8 +60,8 @@ const styles = StyleSheet.create({
     textStyle: {
         fontSize: 20,
         color: 'black',
-        fontWeight:'490',
-      
+        fontWeight: '490',
+
     },
 
     categorybox: {
@@ -74,10 +74,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: "#f0f0f0",
-        elevation:10,   
-        margin:1,
+        elevation: 10,
+        margin: 1,
     },
-    
+
 
 });
 

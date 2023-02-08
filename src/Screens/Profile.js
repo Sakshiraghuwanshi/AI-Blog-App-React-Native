@@ -3,6 +3,7 @@ import { View ,Text,StyleSheet,ScrollView} from 'react-native';
 import Header from '../components/Header';
 import UserAcc from '../components/UserAcc'
 import UserBlogs from '../components/UserBlogs'
+
 const Profile = (props) => {
     const {navigation} = props;
     return (
