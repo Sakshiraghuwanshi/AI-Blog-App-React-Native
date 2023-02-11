@@ -7,7 +7,7 @@ const AI = (props) => {
 
     <View style={styles.mainview}>
       <Header title={'AI'} />
-      <View style={{ margin: 20 }} />
+      <View style={{ margin: 40 }} />
 
       <View style={styles.SectionStyle}>
         <Image
