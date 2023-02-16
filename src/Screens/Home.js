@@ -35,7 +35,7 @@ const Home = (props) => {
         {
           posts.map((post) => {
             return (
-              <TouchableOpacity onPress={() => props.navigation.navigate('AI')}>
+              <TouchableOpacity onPress={() => props.navigation.navigate('Readmore')}>
                 < BlogPost post={post} />
               </TouchableOpacity>
             )

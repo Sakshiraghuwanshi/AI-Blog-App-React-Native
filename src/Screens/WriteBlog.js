@@ -11,7 +11,7 @@ const WriteBlog = (props) => {
       <Header title={'WriteBlogs'} />
       <ScrollView>
      <View style={{marginTop:20}}>
-      <Text style={{marginLeft:60,color:'purple',fontFamily:'cursive',fontWeight:'700',fontSize:30,}}>Start Writing Your Blogs</Text>
+      <Text style={{marginLeft:60,color:'purple',fontFamily:'cursive',fontWeight:'700',fontSize:30,  textShadowRadius: 5,}}>Start Writing Your Blogs</Text>
      </View>
      
         <View style={{marginBottom:10}}/>
@@ -49,7 +49,7 @@ const WriteBlog = (props) => {
     
           </TouchableOpacity>
         </View>
-        <View style={{marginBottom:-80}}/>
+        <View style={{marginBottom:-90}}/>
         <Dropdown/>
         <View style={{marginBottom:10}}/>
         <View>

@@ -1,12 +1,14 @@
 import React from 'react';
-import { View, Text, Touchable, TouchableOpacity, TextInput } from 'react-native';
+import { View, Text, Touchable, TouchableOpacity, TextInput,ImageBackground ,ScrollView} from 'react-native';
 import Background from '../components/Background';
 import Btn from '../Btn';
 
 
 const Signup = props => {
   return (
-    <Background>
+    <ScrollView>
+    <ImageBackground source={require("../asset/Login7.png")} style={{ height: '100%' }} >
+   
       <View style={{ alignItems: 'center', width: 460 }}>
         <Text
           style={{
@@ -103,7 +105,8 @@ const Signup = props => {
           </View>
         </View>
       </View>
-    </Background>
+      </ImageBackground>
+      </ScrollView>
   );
 };
 

@@ -16,7 +16,8 @@ import Profile from '../Screens/Profile';
 import Tabs from '../Navigation/Tabs';
 import UserAcc from '../components/UserAcc';
 import UserBlogs from '../components/UserBlogs';
-
+import Editprofile from '../components/Editprofile';
+import Readmore from '../components/Readmore'
 
 const Stack = createNativeStackNavigator();
 
@@ -34,8 +35,52 @@ const Auth = () => {
         <Stack.Screen name="WriteBlog" component={WriteBlog} />
         <Stack.Screen name="AI" component={AI} />
         <Stack.Screen name="Profile" component={Profile} />
-        <Stack.Screen name="UserBlogs" component={UserBlogs} />
+        <Stack.Screen name="UserBlogs" component={UserBlogs}
+        options={{headerTitleStyle:{
         
+          fontSize: 32,
+          fontFamily: 'cursive',
+          color: 'black',
+          fontWeight: '900',
+          
+        },
+        headerStyle:{
+          backgroundColor:'#c59fc5',
+          
+        }}} />
+        <Stack.Screen name="Editprofile" component={Editprofile}
+        options={{headerTitleStyle:{
+        
+          fontSize: 32,
+          fontFamily: 'cursive',
+          color: 'black',
+          fontWeight: '900',
+          
+        },
+        headerStyle:{
+          
+          backgroundColor:'#c59fc5',
+          
+        },
+        
+        }} />
+         <Stack.Screen name="Readmore" component={Readmore}
+         options={{
+          headerStyle:{
+          
+            backgroundColor:'#c59fc5',
+            
+          },
+          headerTitleStyle:{
+        
+            fontSize: 32,
+            fontFamily: 'cursive',
+            color: 'black',
+            fontWeight: '900',
+            
+          },
+         }} />
+      
         
 
       </Stack.Navigator>

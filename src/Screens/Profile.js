@@ -8,7 +8,6 @@ const Profile = (props) => {
     const {navigation} = props;
     return (
             
-            
         <View style={styles.mainview}>
             <Header title={'Profile'} />
             <ScrollView>

@@ -19,11 +19,6 @@ const UserAcc = (props)=> {
                     <Image source={require("../asset/profilep.jpg")} style={styles.image} resizeMode="center"></Image>
                 </View>
 
-                <TouchableOpacity>
-                    <View style={styles.add}>
-                        <Image source={require("../asset/userp.png")}></Image>
-                    </View>
-                </TouchableOpacity>
             </View>
 
             <View style={styles.infoContainer}>
@@ -34,21 +29,21 @@ const UserAcc = (props)=> {
                 <TouchableOpacity
                   onPress={() => props.navigation.navigate('UserBlogs')}
                     style={styles.btn}>
-                    <Text style={{ color: 'purple', fontSize: 22, fontWeight: '700' }}>Blogs</Text>
+                    <Text style={{ color: 'purple', fontSize: 22, fontWeight: '700',  textShadowRadius: 5, }}>Blogs</Text>
                 </TouchableOpacity>
             </View>
             <View>
                 <TouchableOpacity
-                    onPress={() => props.navigation.navigate('Login')}
+                    onPress={() => props.navigation.navigate('Editprofile')}
                     style={styles.btn}>
-                    <Text style={{ color: 'purple', fontSize: 22, fontWeight: '700' }}>Edit Profile</Text>
+                    <Text style={{ color: 'purple', fontSize: 22, fontWeight: '700',  textShadowRadius: 5, }}>Edit Profile</Text>
                 </TouchableOpacity>
             </View>
             <View>
                 <TouchableOpacity
                    
                     style={styles.btn}>
-                    <Text style={{ color: 'purple', fontSize: 22, fontWeight: '700' }}>Logout</Text>
+                    <Text style={{ color: 'purple', fontSize: 22, fontWeight: '700',  textShadowRadius: 5, }}>Logout</Text>
                 </TouchableOpacity>
 
             </View>
@@ -93,18 +88,6 @@ const styles = StyleSheet.create({
         borderColor: '#c59fc5',
     },
 
-
-    add: {
-        backgroundColor: "#f0f0f0",
-        position: "absolute",
-        bottom: 0,
-        right: 0,
-        width: 40,
-        height: 40,
-        borderRadius: 30,
-        alignItems: "center",
-        justifyContent: "center"
-    },
     infoContainer: {
         alignSelf: "center",
         alignItems: "center",

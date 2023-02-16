@@ -76,6 +76,7 @@ const styles = StyleSheet.create({
         backgroundColor: "#f0f0f0",
         elevation: 10,
         margin: 1,
+        borderWidth:0.9
     },
 
 

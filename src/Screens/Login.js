@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { View, Text, Touchable, TouchableOpacity, Button, TextInput, Alert, KeyboardAvoidingView, ScrollView, Press } from 'react-native';
+import { View, Text, Touchable, TouchableOpacity, Button, TextInput,ScrollView, Press ,ImageBackground} from 'react-native';
 import Background from '../components/Background';
 import Btn from '../Btn';
 import { Formik } from 'formik';
 import * as yup from 'yup';
 import axios from "axios"
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
+
 
 const Login = ({ navigation }) => {
   //const [user, setUser]= useState();
@@ -17,7 +17,7 @@ const Login = ({ navigation }) => {
   });
 
   return (
-
+    
     <Formik
       initialValues={{ email: '', password: '' }}
       validationSchema={loginValidationSchema}
@@ -36,9 +36,11 @@ const Login = ({ navigation }) => {
       }}
     >
       {({ handleChange, handleBlur, handleSubmit, values, touched, isvalid, errors }) => (
-
-        <Background>
-
+   
+  <ScrollView>
+   <ImageBackground source={require("../asset/Login7.png")} style={{ height: '100%' }} >
+   
+       
           <View style={{ alignItems: 'center', width: 440 }}>
             <Text
               style={{
@@ -139,16 +141,18 @@ const Login = ({ navigation }) => {
                 </TouchableOpacity>
               </View>
 
-
+              
 
             </View>
-
+          
           </View>
-
-        </Background>
+         
+        </ImageBackground>
+        </ScrollView>
 
       )}
     </Formik>
+
   );
 };
 
