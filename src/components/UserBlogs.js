@@ -10,13 +10,13 @@ const UserBlogs = (props) => {
       <ScrollView>
         <View style={{marginBottom:15}}/>
     <View style={{ marginLeft: 15, marginBottom:20}}>
-      <Card style={{ elevation: 30, height: 310, borderRadius: 25, width: 380 ,flex:1}} >
+      <Card style={{ elevation: 30, height: 360, borderRadius: 25, width: 380 ,flex:1}} >
         <Card.Cover source={require("../asset/lad.png")} />
-        <Card.Title title="Ladakh Diaries" titleVariant="headlineSmall" titleNumberOfLines={1}  />
+        <Card.Title title="Ladakh Diaries" titleVariant="headlineSmall" titleNumberOfLines={1} titleStyle={{color:'purple',fontWeight:'bold'}}  />
         <Card.Content>
+        <Text variant="bodyMedium" style={{color:'black',fontWeight:'400'}}>The Ultimate Leh Ladakh Travel Guide – Explore the Unforgettable Land of High Passes!</Text>
 
-          
-         
+         <View style={{marginBottom:10}}/>
         </Card.Content>
        
         <Card.Actions>

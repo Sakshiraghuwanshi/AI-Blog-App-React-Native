@@ -50,13 +50,13 @@ const Categories = (props) => {
                     renderItem={({ item }) => {
                         console.log(item.name);
                         return (
-
-                            <TouchableOpacity 
-                           
-                            style={styles.categorybox}
-                            >
+                          
+                            <TouchableOpacity  
+                            style={styles.categorybox}>
                                 <Text style={styles.textStyle}> {item.name} </Text>
+                               
                             </TouchableOpacity>
+                           
                         );
                     }}
                 />
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
         color: 'purple',
         fontWeight: '700',
         fontFamily: "serif",
-        textShadowRadius: 5,
+        textShadowRadius: 10,
 
     },
 

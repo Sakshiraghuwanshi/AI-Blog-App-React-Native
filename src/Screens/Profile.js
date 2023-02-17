@@ -7,15 +7,15 @@ import UserBlogs from '../components/UserBlogs'
 const Profile = (props) => {
     const {navigation} = props;
     return (
-            
+      <ScrollView>   
         <View style={styles.mainview}>
             <Header title={'Profile'} />
-            <ScrollView>
+           
        <UserAcc navigation={navigation} />
       
-       </ScrollView>
+      
                </View>
-
+               </ScrollView>
 
 
 

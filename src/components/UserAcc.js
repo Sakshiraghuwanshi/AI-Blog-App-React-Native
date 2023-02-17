@@ -41,7 +41,7 @@ const UserAcc = (props)=> {
             </View>
             <View>
                 <TouchableOpacity
-                   
+                    onPress={() => props.navigation.navigate('Readmore')}
                     style={styles.btn}>
                     <Text style={{ color: 'purple', fontSize: 22, fontWeight: '700',  textShadowRadius: 5, }}>Logout</Text>
                 </TouchableOpacity>
