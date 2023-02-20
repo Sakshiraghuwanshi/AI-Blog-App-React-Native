@@ -3,6 +3,8 @@ import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native
 import Header from '../components/Header';
 
 
+   
+   
 const Categories = (props) => {
     const names = [
         {
@@ -52,6 +54,7 @@ const Categories = (props) => {
                         return (
                           
                             <TouchableOpacity  
+                         onPress={() => props.navigation.navigate('BlogPost')}
                             style={styles.categorybox}>
                                 <Text style={styles.textStyle}> {item.name} </Text>
                                

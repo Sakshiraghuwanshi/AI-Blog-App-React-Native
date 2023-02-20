@@ -18,6 +18,8 @@ import UserAcc from '../components/UserAcc';
 import UserBlogs from '../components/UserBlogs';
 import Editprofile from '../components/Editprofile';
 import Readmore from '../components/Readmore'
+import BlogPost from '../components/BlogPost';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -80,6 +82,8 @@ const Auth = () => {
             
           },
          }} />
+         <Stack.Screen name="BlogPost" component={BlogPost}/>
+       
       
         
 
@@ -87,5 +91,4 @@ const Auth = () => {
     </NavigationContainer>
   );
 }
-
 export default Auth;

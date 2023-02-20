@@ -1,12 +1,13 @@
 import react from 'react';
-import { View, Text, StyleSheet, TextInput, Image } from 'react-native';
+import { View, Text, StyleSheet, TextInput, Image,ScrollView } from 'react-native';
 import Header from '../components/Header';
 
 const AI = (props) => {
   return (
-
+   
     <View style={styles.mainview}>
       <Header title={'AI'} />
+      
       <View style={{ margin: 20 }} />
 
       <View style={styles.SectionStyle}>
@@ -32,6 +33,7 @@ const AI = (props) => {
           placeholderTextColor='purple'
         />
       </View>
+     
     </View>
 
 

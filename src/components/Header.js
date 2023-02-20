@@ -7,7 +7,8 @@ const Header = ({ title, icon }) => {
     <LinearGradient colors={['#c59fc5', '#DA70D6']}>
     <View style={styles.header}>
      
-   <TouchableOpacity>
+   <TouchableOpacity
+   onPress={() => props.navigation.navigate('Home')}>
    <Image
             source={require('../asset/harr.png')}
             style={{width: 20, height: 20,marginLeft:-12}}
