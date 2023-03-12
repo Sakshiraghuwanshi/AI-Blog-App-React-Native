@@ -62,6 +62,25 @@ const WriteBlog = (props) => {
             placeholderTextColor='purple' placeholder="Write Blog here...." ></TextInput>
         </View>
 
+        <View>
+        <TouchableOpacity
+       
+        style={{
+          backgroundColor: '#800080',
+          borderRadius: 100,
+          alignItems: 'center',
+          width: 314,
+          height: 50,
+          paddingVertical: 10,
+          marginVertical: 20,
+          marginLeft: 50,
+        }}>
+        <Text style={{color: 'white', fontSize: 20, fontWeight: 'bold'}}>
+           Upload Blog
+        </Text>
+      </TouchableOpacity>
+        </View>
+
 
       </ScrollView>
     </View>

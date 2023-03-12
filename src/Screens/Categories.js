@@ -54,7 +54,7 @@ const Categories = (props) => {
                         return (
                           
                             <TouchableOpacity  
-                         onPress={() => props.navigation.navigate('BlogPost')}
+                         onPress={() => props.navigation.navigate('DiffCategories')}
                             style={styles.categorybox}>
                                 <Text style={styles.textStyle}> {item.name} </Text>
                                

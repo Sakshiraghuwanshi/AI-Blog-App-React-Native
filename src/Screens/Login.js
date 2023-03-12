@@ -4,7 +4,7 @@ import Background from '../components/Background';
 import Btn from '../Btn';
 import { Formik } from 'formik';
 import * as yup from 'yup';
-import axios from "axios"
+import axios from "axios";
 
 
 const Login = ({ navigation }) => {

@@ -8,8 +8,8 @@ const BlogPost = ({post , navigation}) => {
 
     <View style={{ marginLeft: 15, marginBottom: 20 }}>
       <Card style={{ elevation: 30, height: 335, borderRadius: 25, width: 380 ,flex:1}} >
-        <Card.Cover source={post.thumbnail ? {
-          uri : post.thumbnail
+        <Card.Cover source={post?.thumbnail ? {
+          uri : post?.thumbnail
         } : require("../asset/lad.png")} />
        
         <Card.Title title={post?.title} titleVariant="headlineSmall" titleNumberOfLines={1} titleStyle={{fontWeight:'700',color:'purple'}}  />

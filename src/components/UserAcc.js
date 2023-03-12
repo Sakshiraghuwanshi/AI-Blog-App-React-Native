@@ -1,19 +1,19 @@
 
 
 import React from "react";
-import { StyleSheet, Text, View,  Image, ScrollView, TouchableOpacity,press } from "react-native";
+import { StyleSheet, Text, View, Image, ScrollView, TouchableOpacity, press } from "react-native";
 
 
 
 
 
-const UserAcc = (props)=> {
-   
+const UserAcc = (props) => {
+
     return (
-        
+
         <ScrollView>
 
-         
+
             <View style={{ alignSelf: "center" }}>
                 <View style={styles.profileImage}>
                     <Image source={require("../asset/profilep.jpg")} style={styles.image} resizeMode="center"></Image>
@@ -22,28 +22,28 @@ const UserAcc = (props)=> {
             </View>
 
             <View style={styles.infoContainer}>
-                <Text style={[styles.text, { fontWeight: "300", fontSize: 34, color: 'black', fontFamily: "serif",marginBottom:5 }]}>Marie</Text>
-                <Text style={[styles.text, { fontWeight: "200", fontSize: 17, color: 'black',fontFamily: "serif" }]}>Hey,I'm marie from LA.I like to Blog.</Text>
+                <Text style={[styles.text, { fontWeight: "300", fontSize: 34, color: 'black', fontFamily: "serif", marginBottom: 5 }]}>Marie</Text>
+                <Text style={[styles.text, { fontWeight: "200", fontSize: 17, color: 'black', fontFamily: "serif" }]}>Hey,I'm marie from LA.I like to Blog.</Text>
             </View>
             <View>
                 <TouchableOpacity
-                  onPress={() => props.navigation.navigate('UserBlogs')}
+                    onPress={() => props.navigation.navigate('UserBlogs')}
                     style={styles.btn}>
-                    <Text style={{ color: 'purple', fontSize: 22, fontWeight: '700',  textShadowRadius: 5, }}>Blogs</Text>
+                    <Text style={{ color: 'purple', fontSize: 22, fontWeight: '700', textShadowRadius: 5, }}>Blogs</Text>
                 </TouchableOpacity>
             </View>
             <View>
                 <TouchableOpacity
                     onPress={() => props.navigation.navigate('Editprofile')}
                     style={styles.btn}>
-                    <Text style={{ color: 'purple', fontSize: 22, fontWeight: '700',  textShadowRadius: 5, }}>Edit Profile</Text>
+                    <Text style={{ color: 'purple', fontSize: 22, fontWeight: '700', textShadowRadius: 5, }}>Edit Profile</Text>
                 </TouchableOpacity>
             </View>
             <View>
                 <TouchableOpacity
                     onPress={() => props.navigation.navigate('Readmore')}
                     style={styles.btn}>
-                    <Text style={{ color: 'purple', fontSize: 22, fontWeight: '700',  textShadowRadius: 5, }}>Logout</Text>
+                    <Text style={{ color: 'purple', fontSize: 22, fontWeight: '700', textShadowRadius: 5, }}>Logout</Text>
                 </TouchableOpacity>
 
             </View>
@@ -100,10 +100,10 @@ const styles = StyleSheet.create({
         width: 370,
         height: 60,
         paddingVertical: 15,
-        marginBottom:-8,
-        marginTop:30,
+        marginBottom: -8,
+        marginTop: 30,
         marginLeft: 21,
-       elevation:30
+        elevation: 30
 
 
 

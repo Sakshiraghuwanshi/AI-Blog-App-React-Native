@@ -19,6 +19,8 @@ import UserBlogs from '../components/UserBlogs';
 import Editprofile from '../components/Editprofile';
 import Readmore from '../components/Readmore'
 import BlogPost from '../components/BlogPost';
+import Header from '../components/Header';
+import DiffCategories from '../components/DiffCategories'
 
 
 const Stack = createNativeStackNavigator();
@@ -83,7 +85,8 @@ const Auth = () => {
           },
          }} />
          <Stack.Screen name="BlogPost" component={BlogPost}/>
-       
+         <Stack.Screen name="Header" component={Header}/>
+         <Stack.Screen name="DiffCategories" component={DiffCategories} options={{ headerShown: false }}/>
       
         
 

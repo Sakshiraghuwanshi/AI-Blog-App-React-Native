@@ -2,22 +2,23 @@ import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 
-const Header = ({ title, icon }) => {
+const Header = ({ title }) => {
+
   return (
     <LinearGradient colors={['#c59fc5', '#DA70D6']}>
-    <View style={styles.header}>
-     
-   <TouchableOpacity
-   onPress={() => props.navigation.navigate('Home')}>
-   <Image
-            source={require('../asset/harr.png')}
-            style={{width: 20, height: 20,marginLeft:-12}}
-          />
-   </TouchableOpacity>
-    
-      <Text style={[styles.title, { marginLeft: 10 }]}>{title}</Text>
+      <View style={styles.header}>
 
-    </View>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('Home')}>
+          <Image
+            source={require('../asset/harr.png')}
+            style={{ width: 20, height: 20, marginLeft: -12 }}
+          />
+        </TouchableOpacity>
+
+        <Text style={[styles.title, { marginLeft: 10 }]}>{title}</Text>
+
+      </View>
     </LinearGradient>
   );
 };
@@ -39,7 +40,7 @@ const styles = StyleSheet.create({
     fontFamily: 'cursive',
     color: 'black',
     fontWeight: '900',
-    paddingLeft:4
+    paddingLeft: 4
   }
 
 });
